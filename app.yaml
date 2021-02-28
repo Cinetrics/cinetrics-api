@@ -1,0 +1,3 @@
+runtime: python37
+entrypoint: gunicorn -w 1 --preload -k uvicorn.workers.UvicornWorker main:app
+instance_class: F4
